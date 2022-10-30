@@ -1,18 +1,68 @@
-    body,
-    html {
-      height: 100%;
-      margin: 0;
-    }
+html, body {
+  margin: 0;
+  padding: 0;
+  /* overflow: hidden;  */
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  box-sizing:border-box;
+  height:100%;
+  width: 100%;
+  background-image:url("bgblur.jpg");
+  background-position:center;
+  background-size:cover;
+  -o-background-size:cover;
+  -moz-background-size:cover;
+  -webkit-background-size:cover;
+  background-repeat:no-repeat;
+  background-attachment:fixed
+}
 
-    .bg {
-      background-image: url("bg.png");
-      height: 100%;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
+.landing-page {
+  font-family: 'Inter', sans-serif;
+  width: 100%;
+  height: 100%;
+}
 
-    #footer {
+.landing-page-content {
+    position: relative;
+    text-align: left; 
+    left: 25%; 
+    top: 5rem;
+    transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+    -webkit-transform: translate(-50%, 0%);
+    width: 50rem;
+    height: 100%;
+}
+
+.landing-page-social-icons {
+  font-size: 2rem;
+  filter: drop-shadow(0 0 0.5rem #222);
+  color: #F8ECD3;
+  text-decoration: none;
+}
+
+.social-icon {
+  color: #c9ffc9;
+}
+
+.landing-page-content p {
+  filter: drop-shadow(0 0 0.5rem #222);
+  color: #FAF9EA;
+  font-family: 'Inter', sans-serif;
+  font-weight: 200;
+  font-size: 20px;
+}
+
+#fey-main-page-title {
+  filter: drop-shadow(0 0 0.5rem #222);
+  color: #F8ECD3;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 5rem;
+}
+
+#footer {
       position: fixed;
       left: 0;
       bottom: 0;
